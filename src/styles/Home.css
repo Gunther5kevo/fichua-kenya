@@ -1,0 +1,61 @@
+/* src/pages/Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; /* Increase gap between sections */
+    padding: 2rem 1rem; /* Add padding around the home page */
+}
+
+.welcome-section {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-image: url('../assets/images/hero.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white; 
+    min-height: 400px; 
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .welcome-section {
+        background-attachment: scroll; 
+    }
+}
+.cases-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1rem; /* Add padding to the cases section */
+    margin-bottom: 4rem; /* Add space between cases section and footer */
+}
+
+.cases-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem; /* Increase gap between the cards */
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+    background-color: #28a745;
+    padding: 0.8rem 1.5rem; /* Increase padding for better button size */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+@media (max-width: 768px) {
+    .cases-list {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
