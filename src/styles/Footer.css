@@ -3,6 +3,8 @@
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0; /* Maintain padding for aesthetics */
     width: 100%;
+    position: relative; /* Ensure it's positioned relative to the flow of the page */
+    margin-top: auto; /* Push footer to the bottom when content is less */
 }

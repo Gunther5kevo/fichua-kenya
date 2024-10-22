@@ -1,38 +1,38 @@
+/* Reset default margins and paddings */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif; /* Add a default font */
 }
 
+/* Full height for the root element */
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
 }
 
+/* Main application styles */
 .App {
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  flex: 1; /* Allow App to grow and fill the available space */
 }
 
-
+/* Main content area */
 main {
-  flex: 1;
+  flex: 1; /* Ensure main content takes up remaining space */
   padding: 2rem;
+  background-color: #f8f9fa; /* Light background for better contrast */
 }
+
+/* Optional App logo styling (if you have one) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header styles (if applicable) */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -44,15 +44,28 @@ main {
   color: white;
 }
 
+/* Link styles */
 .App-link {
   color: #61dafb;
 }
 
+/* Animation for logo (if applicable) */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  main {
+      padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .App-logo {
+      height: 30vmin; /* Smaller logo on mobile */
   }
 }

@@ -3,12 +3,12 @@ import React from 'react';
 import '../../styles/Sectors.css';
 
 
-const Health = () => {
+const Education = () => {
     return (
         <div className="sector-page">
-            <h1>Corruption in the Health Sector</h1>
+            <h1>Corruption in the Education Sector</h1>
             <p>
-                The health sector has been plagued by issues such as bribery for faster services, misuse of public funds meant for medical supplies, and fraudulent procurement of healthcare equipment.
+                The Education sector has been plagued by issues such as bribery for faster services, misuse of public funds meant for medical supplies, and fraudulent procurement of healthcare equipment.
             </p>
 
             <h2>Recent Cases</h2>
@@ -21,4 +21,4 @@ const Health = () => {
     );
 };
 
-export default Health;
+export default Education;

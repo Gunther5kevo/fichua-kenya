@@ -9,15 +9,40 @@
 
 .welcome-section {
     text-align: center;
-    width: 100%;
-    padding: 3rem 1rem;
-    background-image: url('../assets/images/hero.jpeg'); 
+    width: calc(100% + 2rem); /* Extend the width beyond the parent padding */
+    margin-left: -1rem; /* Counteract left padding */
+    margin-right: -1rem; /* Counteract right padding */
+    padding: 3rem 0; /* Keep vertical padding */
+    margin-top: -30px; /* Pull the section up under the navbar */
+    background-image: url('../assets/images/hero2.png'); 
     background-size: cover; 
     background-position: center; 
-    background-attachment: fixed; 
-    color: white; 
+    background-repeat: no-repeat; 
+    color: rgb(27, 31, 236); 
     min-height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
+
+
+/* Optional overlay for better text visibility */
+.welcome-overlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    z-index: 1; /* Ensure overlay is behind text but above background */
+}
+
+.welcome-content {
+    position: relative; /* Position content relative to overlay */
+    z-index: 2; /* Ensure text is above overlay */
+}
+
 
 /* For smaller screens */
 @media (max-width: 768px) {

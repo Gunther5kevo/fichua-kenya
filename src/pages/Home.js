@@ -11,9 +11,12 @@ const Home = () => {
     return (
         <div className="main-content">
             <section className="welcome-section">
+            <div className="welcome-overlay"></div>
+            <div className="welcome-content">
                 <h1>Welcome to Fichua Kenya</h1>
                 <p>Your platform to report and track corruption cases.</p>
                 <Button text="Report a Case" className="primary-btn" />
+                </div>
             </section>
 
             <section className="cases-section">
